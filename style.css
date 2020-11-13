@@ -1,0 +1,62 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+.tittle{
+    font-weight: bolder;
+    
+}
+.search{
+    height: 450px;
+}
+.images img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.section1 div{
+    margin: 15px ;
+    padding-bottom:35px;
+    text-align: center;
+}
+.section1{
+    justify-content: center;
+}
+
+.section2 div{
+    text-align: center;
+    width: 300px;
+}
+.btn{
+    font-weight: 600;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+.bordes{
+    border: 2px solid black;
+}
+.br-g{
+    border: 1px solid grey;
+}
+.imagenes{
+    height: 400px;
+    width: 50%;
+    margin-bottom: 160px;
+}
+.cards{
+    height: 400px;
+}
+.hoteles{
+
+justify-content: space-around;
+
+}
