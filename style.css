@@ -1,16 +1,35 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    background: rgb(207, 201, 201);
+}
 *{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
 }
 .tittle{
     font-weight: bolder;
-    
 }
 .search{
     height: 450px;
+}
+.search input{
+    opacity: .8;
+}
+.carrusel{
+    width: 40%;
+    border-radius: 1%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
+}
+.carruselitem{
+    height: 350px;
+}
+.carruselimg{
+    object-fit: cover;
 }
 .images img{
     width: 100%;
@@ -36,11 +55,6 @@ html{
     font-weight: 600;
 }
 
-.footer a{
-    text-decoration: none;
-    color: #000000;
-    font-weight: 600;
-}
 .bordes{
     border: 2px solid black;
 }
@@ -53,10 +67,38 @@ html{
     margin-bottom: 160px;
 }
 .cards{
-    height: 400px;
+    flex-direction: column;
+    height: 355px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.botones{
+    height: 100px;
+    align-items: flex-end;
+    justify-content: center;
 }
 .hoteles{
-
 justify-content: space-around;
-
+}
+.fab{
+    font-size: 70px;
+    margin: 3px;
+}
+a{
+    color: rgb(37, 37, 37);
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(201, 181, 143);
+}
+.design{
+    font-size: 20px;
+}
+.imagenes{
+    border-radius: 1%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
 }
