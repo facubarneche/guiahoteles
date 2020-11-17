@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
+    <!---------------- Bootstrap CSS -------------------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!---------------------MI CSS-------------------------->
     <link rel="stylesheet" href="style.css">
+    <!--------------------FONT-AWESOME------------------------->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Guia de Hoteles</title>
@@ -15,9 +17,8 @@
 
 <body>
 
-    <nav class="px-5 navbar sticky-top navbar-expand-lg navbar-light bg-secondary">
-        <a class="navbar-brand" href="index.html">Guiadehoteles.com</a>
-
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-secondary ">
+        <a class="navbar-brand" href="index.html">Guiadehoteles</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,7 +36,8 @@
     <header class="images">
         <img src="images/viajes.png" alt="Guiadehoteles.com">
         <form class="form-inline br-g search justify-content-center">
-            <input class="form-control bg-light mr-sm-2 w-50" type="search" placeholder="Buscar" aria-label="Buscar" id="searchInput">
+            <input class="form-control bg-light mr-sm-2 w-50" type="search" placeholder="Buscar" aria-label="Buscar"
+                id="searchInput">
             <button class="btn btn-outline-secondary my-2 my-sm-0" type="search" id="searchBtn">Buscar</button>
         </form>
     </header>
@@ -47,7 +49,7 @@
 
     <!-----------------------------------------------SECTION 1 -------------------------------------------->
 
-    <section class="d-flex container section1 flex-wrap">
+    <section class="d-flex container mt-5 section1 flex-wrap">
         <div>
             <h2>¿Como funciona?</h2>
             <p>Simplemente eliga un hotel para ver toda su informacion, ver comentarios de otros usuarios, comparar
@@ -67,9 +69,10 @@
     </section>
 
     <!----------------------------------------------SECTION 2 --------------------------------------------->
+
     <!-----------------------------------------HOTEL 1-------------------------------------------------->
-    <div class="d-flex" id="hoteles">
-        <div id="carouselExampleIndicators" class="carousel slide carrusel m-5" data-ride="carousel">
+    <div id="hoteles" class="row justify-content-around flex-wrap section2">
+        <div id="carouselExampleIndicators1" class="col-5 carousel slide carrusel m-4" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -95,27 +98,26 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="d-flex m-5 text-center cards bg-secondary">
+        <div class="text-center cards m-4 bg-secondary col-3">
             <h3>Hotel California</h3>
-            <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i>
+            <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i></i>
             <p>Ubicado a 3 cuadras de la playa</p>
-            <button class="btn btn-primary w-50">Reservar</button>
+            <button class="btn btn-primary">Reservar</button>
 
         </div>
     </div>
-    </div>
-
+<hr>
     <!---------------------------------------HOTEL 2 ------------------------------------>
 
-    <div class="d-flex justify-content-end">
-        <div class="d-flex m-5 text-center cards bg-secondary">
+    <div class="row justify-content-around section2">
+        <div class="text-center cards m-4 bg-secondary col-3">
             <h3>Hotel Buenos Aires</h3>
             <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></i></i></i>
             <p>Ubicado a 3 cuadras del centro</p>
             <button class="btn btn-primary">Reservar</button>
         </div>
-
-        <div id="carouselExampleIndicators2" class="carousel slide carrusel m-5" data-ride="carousel">
+        <div id="carouselExampleIndicators2" class="col-5 carousel slide carrusel m-4" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
@@ -142,12 +144,11 @@
             </a>
         </div>
     </div>
-    </div>
+<hr>
+    <!---------------------------------------HOTEL 3 ------------------------------------>
 
-     <!---------------------------------------HOTEL 3 ------------------------------------>
-
-    <div class="d-flex">
-        <div id="carouselExampleIndicators3" class="carousel slide carrusel m-5" data-ride="carousel">
+    <div class="row justify-content-around section2">
+        <div id="carouselExampleIndicators3" class="col-5 carousel slide carrusel m-4" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
@@ -173,26 +174,26 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="d-flex m-5 text-center cards bg-secondary">
+        <div class="text-center cards  m-4 bg-secondary col-3">
             <h3>Hotel California</h3>
-            <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star-half"></i></i></i></i>
+            <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i
+                            class="fas fa-star-half"></i></i></i></i>
             <p>Ubicado a 3 cuadras de la playa</p>
-            <button class="btn btn-primary w-50">Reservar</button>
+            <button class="btn btn-primary">Reservar</button>
 
         </div>
     </div>
-    </div>
+<hr>
+    <!---------------------------------------HOTEL 4 ------------------------------------>
 
- <!---------------------------------------HOTEL 4 ------------------------------------>
-
-    <div class="d-flex justify-content-end">
-        <div class="d-flex m-5 text-center cards bg-secondary">
+    <div class="row justify-content-around section2">
+        <div class="text-center cards m-4 bg-secondary col-3">
             <h3>Hotel Buenos Aires</h3>
             <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star-half"></i></i></i>
             <p>Ubicado a 3 cuadras del centro</p>
             <button class="btn btn-primary">Reservar</button>
         </div>
-        <div id="carouselExampleIndicators4" class="carousel slide carrusel m-5" data-ride="carousel">
+        <div id="carouselExampleIndicators4" class="col-5 carousel slide carrusel m-4" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
@@ -219,12 +220,11 @@
             </a>
         </div>
     </div>
-    </div>
+<hr>
+    <!---------------------------------------HOTEL 5 ------------------------------------>
 
- <!---------------------------------------HOTEL 5 ------------------------------------>
-
-    <div class="d-flex">
-        <div id="carouselExampleIndicators5" class="carousel slide carrusel m-5" data-ride="carousel">
+    <div class="row justify-content-around section2">
+        <div id="carouselExampleIndicators5" class="col-5 carousel slide carrusel m-4" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
@@ -250,26 +250,26 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="d-flex m-5 text-center cards bg-secondary">
+        <div class="text-center cards m-4 bg-secondary col-3">
             <h3>Hotel California</h3>
             <i class="fas fa-star"><i class="fas fa-star"></i></i>
             <p>Ubicado a 3 cuadras de la playa</p>
-            <button class="btn btn-primary w-50">Reservar</button>
+            <button class="btn btn-primary">Reservar</button>
 
         </div>
     </div>
-    </div>
+<hr>
+    <!---------------------------------------HOTEL 6 ------------------------------------>
 
-     <!---------------------------------------HOTEL 6 ------------------------------------>
-
-    <div class="d-flex justify-content-end">
-        <div class="d-flex m-5 text-center cards bg-secondary">
+    <div class="row justify-content-around section2">
+        <div class="text-center cards m-4 bg-secondary col-3">
             <h3>Hotel Buenos Aires</h3>
-            <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star-half"></i></i></i></i></i>
+            <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i
+                                class="fas fa-star-half"></i></i></i></i></i>
             <p>Ubicado a 3 cuadras del centro</p>
             <button class="btn btn-primary">Reservar</button>
         </div>
-        <div id="carouselExampleIndicators6" class="carousel slide carrusel m-5" data-ride="carousel">
+        <div id="carouselExampleIndicators6" class="col-5 carousel slide carrusel m-4" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
@@ -296,12 +296,47 @@
             </a>
         </div>
     </div>
-    </div>
+<hr>
+    <!---------------------------------HOTEL 7------------------------------------>
+    <div class="row justify-content-around section2">
+        <div id="carouselExampleIndicators7" class="col-5 carousel slide carrusel m-4" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators7" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/hotel1.png" class="d-block carrusel w-100 carruselitem" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hotel2.png" class="d-block carrusel w-100 carruselitem" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hotel3.png" class="d-block carrusel w-100 carruselitem" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
 
+        <div class="text-center cards m-4 bg-secondary col-3">
+            <h3>Hotel California</h3>
+            <i class="fas fa-star"><i class="fas fa-star"></i></i>
+            <p>Ubicado a 3 cuadras de la playa</p>
+            <button class="btn btn-primary">Reservar</button>
+        </div>
+    </div>
     </section>
 
     <!----------------------------------------------FOOTER --------------------------------------------->
-    <footer class="bg-secondary text-center">
+    <footer class="bg-secondary text-center mt-5 footer">
         <div id="nosotros" class="d-flex justify-content-around">
 
             <div class="pt-3">
@@ -327,14 +362,44 @@
     </footer>
 
     <!-------------------------------------------SCRIPTS ---------------------------------------------->
+    <!------------------MI JS----------------------------------->
     <script src="main.js"></script>
+    <!---------------------SCROLL REVEAL------------------------>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--------------------BOOTSTRAP 4--------------------------->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar', {
+            delay: 1200,
+        });
+        sr.reveal('.images', {
+            duration: 2000,
+            origin: 'top',
+            distance: '200px'
+        });
+        sr.reveal('.tittle', {
+            duration: 2000,
+            origin: 'right',
+            distance: '900px'
+        });
+        sr.reveal('.section1', {
+            delay: 500,
+        });
+        sr.reveal('.section2', {
+            delay: 500,
+        });
+        sr.reveal('.footer', {
+            duration: 2000,
+            origin: 'left',
+            distance: '800px'
+        });
+    </script>
 </body>
 
 </html>
