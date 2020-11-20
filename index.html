@@ -16,9 +16,9 @@
 </head>
 
 <body>
-
+    <!--NAVBAR-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-secondary ">
-        <a class="navbar-brand" href="index.html">Guiadehoteles</a>
+        <a class="logo navbar-brand" href="index.html">Guiadehoteles</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,17 +33,17 @@
         </div>
     </nav>
 
-
-    <header class="row justify-content-center images br-g">
+    <!--BANNER-->
+    <header class="row justify-content-center images">
         <img src="images/viajes.png" alt="Guiadehoteles.com">
-        <form class="search col-11 col-md-9">
+        <form class="banner col-11 col-md-9">
             <input class="form-control bg-light" type="search" placeholder="Buscar" aria-label="Buscar"
                 id="searchInput">
-            <button class="btn btn-outline-secondary col-4 col-md-2 mt-4" type="search" id="searchBtn">Buscar</button>
+            <button class="btn btn-outline-secondary col-4 col-md-2 mt-4 boton-banner" type="search" id="searchBtn">Buscar</button>
         </form>
     </header>
 
-
+    <!--MAIN TITTLE-->
     <main>
         <h1 id="reservas" class="p-4 tittle bg-warning">Hoteles</h1>
     </main>
@@ -74,7 +74,7 @@
 
     <!-----------------------------------------HOTEL 1-------------------------------------------------->
     <div id="hoteles" class="row justify-content-around flex-wrap section2">
-        <div id="carouselExampleIndicators" class="carousel slide carrusel m-4 col-xl-6 col-md-6 col-sm-10 col-11"
+        <div id="carouselExampleIndicators" class="carousel slide carrusel m-4 col-lg-5 col-md-6 col-sm-10 col-11"
             data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -101,25 +101,18 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="text-center cards m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
+        <div class="cards text-center d-flex flex-column justify-content-around m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
             <h3>Hotel California</h3>
-            <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i></i>
-            <p>Ubicado a 3 cuadras de la playa</p>
-            <button class="btn btn-primary">Reservar</button>
+            <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i>
+            <p>Ubicado a 2 cuadras de la playa mas famosa en todo california</p>
+            <button class="btn btn-primary centrar">Reservar</button>
         </div>
     </div>
     <hr>
     <!---------------------------------------HOTEL 2 ------------------------------------>
 
-    <div class="row justify-content-around section2">
-        <div class="text-center cards m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
-            <h3>Hotel Buenos Aires</h3>
-            <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></i></i></i>
-            <p>Ubicado a 3 cuadras del centro</p>
-            <button class="btn btn-primary">Reservar</button>
-        </div>
-        <div id="carouselExampleIndicators2" class="carousel slide carrusel m-4 col-xl-6 col-sm-10 col-11"
+    <div id="hoteles" class="row justify-content-around flex-wrap section2">
+        <div id="carouselExampleIndicators2" class="carousel slide carrusel m-4 col-lg-5 col-md-6 col-sm-10 col-11"
             data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
@@ -146,12 +139,18 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <div class="cards text-center d-flex flex-column justify-content-around m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
+            <h3>Hotel Buenos Aires</h3>
+            <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"></i></i></i></i>
+            <p>Ubicado a 3 cuadras del centro</p>
+            <button class="btn btn-primary centrar">Reservar</button>
+        </div>
     </div>
     <hr>
     <!---------------------------------------HOTEL 3 ------------------------------------>
 
-    <div class="row justify-content-around section2">
-        <div id="carouselExampleIndicators3" class="carousel slide carrusel m-4 col-xl-6 col-sm-10 col-11"
+    <div id="hoteles" class="row justify-content-around flex-wrap section2">
+        <div id="carouselExampleIndicators3" class="carousel slide carrusel m-4 col-lg-5 col-md-6 col-sm-10 col-11"
             data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
@@ -178,25 +177,19 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="text-center cards m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
-            <h3>Hotel California</h3>
+        <div class="cards text-center d-flex flex-column justify-content-around m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
+            <h3>Hotel Montevideo</h3>
             <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i
                             class="fas fa-star-half"></i></i></i></i>
-            <p>Ubicado a 3 cuadras de la playa</p>
-            <button class="btn btn-primary">Reservar</button>
+            <p>Ubicado a 1 cuadra de la playa principal y a 3 cuadras del centro</p>
+            <button class="btn btn-primary centrar">Reservar</button>
         </div>
     </div>
     <hr>
     <!---------------------------------------HOTEL 4 ------------------------------------>
 
-    <div class="row justify-content-around section2">
-        <div class="text-center cards m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
-            <h3>Hotel Buenos Aires</h3>
-            <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star-half"></i></i></i>
-            <p>Ubicado a 3 cuadras del centro</p>
-            <button class="btn btn-primary">Reservar</button>
-        </div>
-        <div id="carouselExampleIndicators4" class="carousel slide carrusel m-4 col-xl-6 col-sm-10 col-11"
+    <div id="hoteles" class="row justify-content-around flex-wrap section2">
+        <div id="carouselExampleIndicators4" class="carousel slide carrusel m-4 col-lg-5 col-md-6 col-sm-10 col-11"
             data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
@@ -223,12 +216,18 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <div class="cards text-center d-flex flex-column justify-content-around m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
+        <h3>Hotel Cali</h3>
+        <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star-half"></i></i></i>
+        <p>Ubicado a 7 cuadras del centro de la cuidad, y a 5km de la zona de playa</p>
+            <button class="btn btn-primary centrar">Reservar</button>
+        </div>
     </div>
     <hr>
     <!---------------------------------------HOTEL 5 ------------------------------------>
 
-    <div class="row justify-content-around section2">
-        <div id="carouselExampleIndicators5" class="carousel slide carrusel m-4 col-xl-6 col-sm-10 col-11"
+    <div id="hoteles" class="row justify-content-around flex-wrap section2">
+        <div id="carouselExampleIndicators5" class="carousel slide carrusel m-4 col-lg-5 col-md-6 col-sm-10 col-11"
             data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
@@ -255,29 +254,22 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="text-center cards m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
-            <h3>Hotel California</h3>
+        <div class="cards text-center d-flex flex-column justify-content-around m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
+            <h3>Hotel Budapest</h3>
             <i class="fas fa-star"><i class="fas fa-star"></i></i>
-            <p>Ubicado a 3 cuadras de la playa</p>
-            <button class="btn btn-primary">Reservar</button>
+            <p>Ubicado a 4 cuadras de la playa y 5 cuadras del centro</p>
+            <button class="btn btn-primary centrar">Reservar</button>
 
         </div>
     </div>
     <hr>
     <!---------------------------------------HOTEL 6 ------------------------------------>
 
-    <div class="row justify-content-around section2">
-        <div class="text-center cards m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
-            <h3>Hotel Buenos Aires</h3>
-            <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i
-                                class="fas fa-star-half"></i></i></i></i></i>
-            <p>Ubicado a 3 cuadras del centro</p>
-            <button class="btn btn-primary">Reservar</button>
-        </div>
-        <div id="carouselExampleIndicators6" class="carousel slide carrusel m-4 col-xl-6 col-sm-10 col-11"
+    <div id="hoteles" class="row justify-content-around flex-wrap section2">
+        <div id="carouselExampleIndicators6" class="carousel slide carrusel m-4 col-lg-5 col-md-6 col-sm-10 col-11"
             data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
             </ol>
@@ -301,11 +293,18 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <div class="cards text-center d-flex flex-column justify-content-around m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
+            <h3>Hotel Ontario</h3>
+            <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i
+                                class="fas fa-star-half"></i></i></i></i></i>
+            <p>Ubicado a 3 cuadras del centro y a 10km de la frontera con los estados unidos</p>
+            <button class="btn btn-primary centrar">Reservar</button>
+        </div>
     </div>
     <hr>
     <!---------------------------------HOTEL 7------------------------------------>
-    <div class="row justify-content-around section2">
-        <div id="carouselExampleIndicators7" class="carousel slide carrusel m-4 col-xl-6 col-sm-10 col-11"
+    <div id="hoteles" class="row justify-content-around flex-wrap section2">
+        <div id="carouselExampleIndicators7" class="carousel slide carrusel m-4 col-lg-5 col-md-6 col-sm-10 col-11"
             data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
@@ -333,11 +332,11 @@
             </a>
         </div>
 
-        <div class="text-center cards m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
-            <h3>Hotel California</h3>
+        <div class="cards text-center d-flex flex-column justify-content-around m-4 bg-secondary col-xl-2 col-md-3 col-sm-4 col-6">
+            <h3>Hotel Santiago</h3>
             <i class="fas fa-star"><i class="fas fa-star"></i></i>
-            <p>Ubicado a 3 cuadras de la playa</p>
-            <button class="btn btn-primary">Reservar</button>
+            <p>Ubicado a 2 cuadras de la playa y 7 cuadras del centro</p>
+            <button class="btn centrar btn-primary">Reservar</button>
         </div>
     </div>
     </section>
